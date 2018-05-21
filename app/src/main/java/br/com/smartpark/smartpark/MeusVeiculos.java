@@ -70,7 +70,7 @@ public class MeusVeiculos extends AppCompatActivity {
                     startActivity(new Intent(MeusVeiculos.this, CadastroVeiculos.class));
                 }
                 else if (which == 1){
-                    boolean isInserted = myDb.deleteVeiculo("8");
+                    boolean isInserted = myDb.deleteVeiculo("1");
                     if(isInserted){
                         Toast.makeText(MeusVeiculos.this, "Excluído com sucesso!", Toast.LENGTH_LONG).show();
                         finish();
